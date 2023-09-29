@@ -39,6 +39,34 @@ body {
     z-index: 1;
 }
 
+#MydMylodon {
+  text-align: center; /* Alinea la imagen en el centro */
+}
+
+#MydMylodon img {
+  width: 30%; /* Ajusta el ancho de la imagen según tus preferencias */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.texto-derecha {
+  width: 95%;
+  height: 800px;
+  font-size: 200px;
+  font-family: themillion;
+  text-align: right; /* Alinea el texto hacia la derecha */
+  color: #ffffff;
+}
+
+.teams {
+  width: 100%;
+  height: 110px;
+  font-size: 70px;
+  font-family: themillion;
+  margin-top: 30px;
+  align-items: center;
+  text-align: center;
+  position: relative; /* Establecer posición relativa para el div .navbar-item */
+}
 
 /* Estilos para el footer */
 footer {
