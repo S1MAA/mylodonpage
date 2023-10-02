@@ -86,6 +86,13 @@ body {
   position: relative; /* Establecer posición relativa para el div .navbar-item */
 }
 
+/* CARRUSEL */
+
+#carouselExampleIndicators{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 
 /* BOTON Y POLERA */
 
@@ -95,7 +102,7 @@ body {
 }
 
 #polera_boton{
-margin-left: 30%;
+margin-left: 20%;
 }
 
 
@@ -196,8 +203,8 @@ margin-left: 30%;
   fill: #0E1822;
  }
  
- .image {
-  max-width: 100%;  /* Ajusta el ancho máximo de la imagen según sea necesario */
+ .polera {
+  max-width: 200%;  /* Ajusta el ancho máximo de la imagen según sea necesario */
   margin-right: 100px; /* Espacio entre la imagen y el botón */
 }
 
@@ -206,6 +213,8 @@ margin-left: 30%;
 .cardsnoticias{
 display: flex;
 align-items: center;
+margin-left: 17%;
+margin-right: 10%;
 }
 
 .card {
@@ -213,9 +222,9 @@ align-items: center;
   width: 330px;
   min-height: 370px;
   border-radius: 20px;
-  background: #212121;
-  box-shadow: 5px 5px 8px #1b1b1b,
-             -5px -5px 8px #272727;
+  background: #12184b;
+  box-shadow: 5px 5px 8px #12184b,
+             -5px -5px 8px #0a0e3e;
   transition: 0.4s;
 }
 
@@ -224,6 +233,7 @@ align-items: center;
 }
 
 .card-title {
+  font-family: themillion;
   font-size: 18px;
   font-weight: 600;
   color: #b2eccf;
@@ -231,15 +241,17 @@ align-items: center;
 }
 
 .card-image {
-  min-height: 170px;
+
   background-color: #313121;
   border-radius: 15px;
   background: #313131;
   box-shadow: inset 5px 5px 3px #2f2f2f,
             inset -5px -5px 3px #333333;
+            overflow: hidden;
 }
 
 .card-body {
+  font-family: themillion;
   margin: 13px 0 0 10px;
   color: rgb(184, 184, 184);
   font-size: 15px;
@@ -266,8 +278,8 @@ footer {
     text-align: center;
     margin-bottom: 0px;
 }
-.card {
-    width: fit-content;
+.footerlog {
+    max-width: 100%;
     height: fit-content;
     background-color: rgb(51, 51, 51);
     display: flex;
