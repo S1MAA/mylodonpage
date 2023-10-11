@@ -33,12 +33,19 @@ body {
     width: 20%;
     height: 70px;
     font-size: 23px;
+    transition: font-size 0.3s ease;
     font-family: themillion;
     margin-top: 30px;
     align-items: center;
     text-align: center;
     position: relative; /* Establecer posición relativa para el div .navbar-item */
 }
+
+.navbar-item:hover{
+  color: #0bf7ff;
+  font-size: 27px;
+}
+
 
 /* CARACTERISTICAS DEL LOGO */
 
@@ -50,6 +57,7 @@ body {
     height: 300px; 
     z-index: 1;
 }
+
 
 /* CARACTERISTICAS DE IMAGEN LOGOTIPO */
 
@@ -211,11 +219,10 @@ margin-left: 20%;
 /* NOTICIAS */
 
 .cardsnoticias{
-display: flex;
-align-items: center;
-margin-left: 17%;
-margin-right: 10%;
-}
+  display: flex;
+  align-items: center;
+  padding-left: 17%;
+  }
 
 .card {
   padding: 20px;
