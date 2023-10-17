@@ -56,8 +56,12 @@ body {
     width: 300px; 
     height: 300px; 
     z-index: 1;
+    transition: transform 0.3s ease;
 }
 
+.navbar-item:hover img {
+  transform: scale(1.1); /* Aumentar el tamaño al pasar el ratón */
+}
 
 /* CARACTERISTICAS DE IMAGEN LOGOTIPO */
 
@@ -267,8 +271,8 @@ margin-left: 20%;
 .footer {
   float: right;
   margin: 28px 0 0 18px;
-  font-size: 13px;
-  color: #b3b3b3;
+  font-size: 17px;
+  color: #fafafa;
 }
 
 .by-name {
