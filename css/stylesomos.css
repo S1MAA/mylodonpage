@@ -1,0 +1,273 @@
+/*  */
+
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/fondo.png');
+    background-attachment: fixed;
+}
+
+/* EXPORTANDO FUENTE */
+
+@font-face {
+    font-family:themillion;
+    src: url(../letra1.ttf);
+}
+
+/* BACKGROUND DE BARRA DE ITEMS */
+
+.navbar {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(20, 21, 71,0.8);
+    color: #ffffff;
+    position: relative; /* Establecer posición relativa para el div .navbar */
+}
+
+/* CARACTERISTICAS DE LOS ITEMS */
+
+.navbar-item {
+    width: 20%;
+    height: 70px;
+    font-size: 23px;
+    transition: font-size 0.3s ease;
+    font-family: themillion;
+    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+    position: relative; /* Establecer posición relativa para el div .navbar-item */
+}
+
+.navbar-item:hover{
+  color: #0bf7ff;
+  font-size: 27px;
+}
+
+
+/* CARACTERISTICAS DEL LOGO */
+
+.navbar-item img {
+    position: absolute; /* Establecer posición absoluta para la imagen */
+    margin-top: -100px;
+    margin-left: -40%;
+    width: 300px; 
+    height: 300px; 
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.navbar-item :hover img {
+transform: scale(1.1);
+}
+.navbar-item a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: #ffffff; /* Cambia el color del texto a negro o el color que desees */
+  /* Puedes ajustar otros estilos, como la fuente, tamaño de fuente, etc., según tus preferencias */
+}
+/* CARACTERISTICAS DE IMAGEN LOGOTIPO */
+
+#MydMylodon {
+  text-align: center; /* Alinea la imagen en el centro */
+}
+
+#MydMylodon img {
+  width: 30%; /* Ajusta el ancho de la imagen según tus preferencias */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+
+/* CARTA INFORMACION */
+.card {
+position: absolute;
+top: 400px;
+left: 50%;
+display: inline-block;
+  margin-right: 40px;
+  width: 900px;
+ 
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;           
+}
+
+.card-title {
+  font-family: themillion;
+  font-size: 50px;
+  font-weight: 600;
+  color: #7ef0ff;
+  margin: 15px 0 0 10px;
+}
+
+.card-body {
+  text-indent: 20px;
+  font-family: themillion;
+  margin: 13px 0 0 10px;
+  color: rgb(53, 53, 53);
+  font-size: 15px;
+}
+
+.footer {
+  font-family: themillion;
+  text-indent: 20px;
+  float: left;
+  margin: 28px 0 0 18px;
+  font-size: 13px;
+  color: #000000;
+}
+.by-name {
+  font-weight: 700;
+}
+
+.sobrenosotros {
+  display: flex;
+  align-items: center; /* Alinea verticalmente */
+}
+
+
+
+
+
+/*  PRUEBAAA FONDOBLANCO E IMAGEN   */
+
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  height: 120vh; /* Ajusta la altura de la ventana */
+}
+
+.imagen {
+  flex: 1;
+  background-image: url('../img/somosimg.png'); /* URL de tu imagen */
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.fondo-blanco {
+  flex: 1;
+  background-color: white; /* Color de fondo blanco */
+  padding: 20px;
+  height: 100%;
+}
+
+h1 {
+  font-family: themillion;
+  font-size: 50px;
+  font-weight: 600;
+  color: #7ef0ff;
+  margin: 30px 0 0 50px;
+}
+
+p {
+  color: #787878;
+  font-size: 25px; /* Cambia el tamaño del texto */
+  font: sans-serif;
+  margin: 30px 0 0 50px;
+  margin-bottom: 10px; /* Agrega margen en la parte inferior */
+}
+
+p1 {
+  color: #000000;
+  font-size: 25px; /* Cambia el tamaño del texto */
+  font:overpass, sans-serif; 
+  margin: 100px 0 0 50px;
+  font-weight: 700;
+  margin-bottom: 10px; /* Agrega margen en la parte inferior */
+}
+
+
+
+
+
+
+
+
+/* Estilos para el FOOTER */
+footer {
+  background-color: #100d3b;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.footerlog {
+  max-width: 100%;
+  height: fit-content;
+  background-color: rgb(13, 14, 53);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(13, 12, 43);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/* Fin de los estilos para el footer */
+
