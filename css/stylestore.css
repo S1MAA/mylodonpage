@@ -40,8 +40,10 @@ body {
     text-align: center;
     position: relative; /* Establecer posición relativa para el div .navbar-item */
 }
-
-.navbar-item:hover{
+.navbar-item a{
+  transition: font-size 0.3s ease;
+}
+.navbar-item a:hover{
   color: #0bf7ff;
   font-size: 27px;
 }

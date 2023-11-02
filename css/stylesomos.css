@@ -1,5 +1,6 @@
 /*  */
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 body {
     min-height: 100%;
@@ -165,16 +166,16 @@ h1 {
 
 p {
   color: #787878;
-  font-size: 25px; /* Cambia el tamaño del texto */
-  font: sans-serif;
+  font-size: 20px; /* Cambia el tamaño del texto */
+  font-family: 'Quicksand', sans-serif;
   margin: 30px 0 0 50px;
   margin-bottom: 10px; /* Agrega margen en la parte inferior */
 }
 
 p1 {
   color: #000000;
-  font-size: 25px; /* Cambia el tamaño del texto */
-  font:overpass, sans-serif; 
+  font-size: 20px; /* Cambia el tamaño del texto */
+  font-family: 'Quicksand', sans-serif;
   margin: 100px 0 0 50px;
   font-weight: 700;
   margin-bottom: 10px; /* Agrega margen en la parte inferior */
