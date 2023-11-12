@@ -9,7 +9,7 @@ body {
     background-attachment: fixed;
 }
 
-/* EXPORTANDO FUENTE */
+/* IMPORTANDO FUENTE */
 
 @font-face {
     font-family:themillion;
@@ -42,6 +42,9 @@ body {
     position: relative; /* Establecer posición relativa para el div .navbar-item */
 }
 
+.navbar-item a{
+  transition: font-size 0.3s ease;
+}
 .navbar-item a:hover{
   color: #0bf7ff;
   font-size: 27px;
