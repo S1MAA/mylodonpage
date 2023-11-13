@@ -48,10 +48,12 @@ body {
   font-size: 27px;
 }
 
-.navbar-item b {
-  color: #0bf7ff;
- 
+.navbar-item a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: #ffffff; /* Cambia el color del texto a negro o el color que desees */
+  /* Puedes ajustar otros estilos, como la fuente, tamaño de fuente, etc., según tus preferencias */
 }
+
 
 
 /* CARACTERISTICAS DEL LOGO */
@@ -69,12 +71,12 @@ body {
 .navbar-item :hover img {
 transform: scale(1.1);
 }
-.navbar-item a {
-  text-decoration: none; /* Elimina el subrayado */
-  color: #ffffff; /* Cambia el color del texto a negro o el color que desees */
-  /* Puedes ajustar otros estilos, como la fuente, tamaño de fuente, etc., según tus preferencias */
-}
+
+
+
+
 /* CARACTERISTICAS DE IMAGEN LOGOTIPO */
+
 
 #MydMylodon {
   text-align: center; /* Alinea la imagen en el centro */

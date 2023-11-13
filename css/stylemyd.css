@@ -1,5 +1,6 @@
 /*  */
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 body {
     min-height: 100%;
@@ -30,20 +31,28 @@ body {
 /* CARACTERISTICAS DE LOS ITEMS */
 
 .navbar-item {
-    width: 20%;
-    height: 70px;
-    font-size: 23px;
-    transition: font-size 0.3s ease;
-    font-family: themillion;
-    margin-top: 30px;
-    align-items: center;
-    text-align: center;
-    position: relative; /* Establecer posición relativa para el div .navbar-item */
+  width: 20%;
+  height: 70px;
+  font-size: 23px;
+  transition: font-size 0.3s ease;
+  font-family: themillion;
+  margin-top: 30px;
+  align-items: center;
+  text-align: center;
+  position: relative; /* Establecer posición relativa para el div .navbar-item */
+}
+.navbar-item a{
+transition: font-size 0.3s ease;
+}
+.navbar-item a:hover{
+color: #0bf7ff;
+font-size: 27px;
 }
 
-.navbar-item:hover{
-  color: #0bf7ff;
-  font-size: 27px;
+.navbar-item a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: #ffffff; /* Cambia el color del texto a negro o el color que desees */
+  /* Puedes ajustar otros estilos, como la fuente, tamaño de fuente, etc., según tus preferencias */
 }
 
 
@@ -62,11 +71,9 @@ body {
 .navbar-item :hover img {
 transform: scale(1.1);
 }
-.navbar-item a {
-  text-decoration: none; /* Elimina el subrayado */
-  color: #ffffff; /* Cambia el color del texto a negro o el color que desees */
-  /* Puedes ajustar otros estilos, como la fuente, tamaño de fuente, etc., según tus preferencias */
-}
+
+
+
 /* CARACTERISTICAS DE IMAGEN LOGOTIPO */
 
 #MydMylodon {
@@ -77,6 +84,193 @@ transform: scale(1.1);
   width: 30%; /* Ajusta el ancho de la imagen según tus preferencias */
   margin: 0 auto; /* Centra la imagen horizontalmente */
 }
+
+
+
+
+
+
+
+
+
+
+/*  PRUEBAAA FONDOBLANCO E IMAGEN   */
+
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  height: 120vh; /* Ajusta la altura de la ventana */
+}
+
+.imagen {
+  flex: 1;
+  background-image: url('../img/myfimg.png'); /* URL de tu imagen */
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.fondo-blanco {
+  flex: 1;
+  background-color: white; /* Color de fondo blanco */
+  padding: 20px;
+  height: 100%;
+}
+
+h1 {
+  font-family: themillion;
+  font-size: 30px;
+  font-weight: 600;
+  color: #181358;
+  margin: 30px 0 0 50px;
+}
+
+p {
+  color: #787878;
+  font-size: 20px; /* Cambia el tamaño del texto */
+  font-family: 'Quicksand', sans-serif;
+  margin: 30px 70px 0 50px;
+  margin-bottom: 10px; /* Agrega margen en la parte inferior */
+}
+
+
+
+
+
+/*  CORREO ELECTRONICOOOOOOO   */
+
+.input-container {
+  position: relative;
+  margin: 50px auto;
+  width: 200px;
+  left: -180px;
+}
+
+.input-container input[type="text"] {
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+  width: 250%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 5px 0;
+  background-color: transparent;
+  outline: none;
+}
+
+.input-container .label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ccc;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.input-container input[type="text"]:focus ~ .label,
+.input-container input[type="text"]:valid ~ .label {
+  top: -20px;
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+  color: #333;
+}
+
+.input-container .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 250%;
+  background-color: #333;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+
+.input-container input[type="text"]:focus ~ .underline,
+.input-container input[type="text"]:valid ~ .underline {
+  transform: scaleX(1);
+}
+
+
+
+/*  boton CORREO ELECTRONICOOO  */
+
+button {
+  display: flex;
+  position: absolute;
+  margin-left: 690px;
+  --primary-color: #181358;;
+  --secondary-color: #fff;
+  --hover-color: #111;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+}
+
+button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+button:hover .arrow:before {
+  right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

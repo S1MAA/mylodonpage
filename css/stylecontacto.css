@@ -1,5 +1,6 @@
 /*  */
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 body {
     min-height: 100%;
@@ -30,23 +31,29 @@ body {
 /* CARACTERISTICAS DE LOS ITEMS */
 
 .navbar-item {
-    width: 20%;
-    height: 70px;
-    font-size: 23px;
-    transition: font-size 0.3s ease;
-    font-family: themillion;
-    margin-top: 30px;
-    align-items: center;
-    text-align: center;
-    position: relative; /* Establecer posición relativa para el div .navbar-item */
+  width: 20%;
+  height: 70px;
+  font-size: 23px;
+  transition: font-size 0.3s ease;
+  font-family: themillion;
+  margin-top: 30px;
+  align-items: center;
+  text-align: center;
+  position: relative; /* Establecer posición relativa para el div .navbar-item */
+}
+.navbar-item a{
+transition: font-size 0.3s ease;
+}
+.navbar-item a:hover{
+color: #0bf7ff;
+font-size: 27px;
 }
 
-.navbar-item:hover{
-  color: #0bf7ff;
-  font-size: 27px;
+.navbar-item a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: #ffffff; /* Cambia el color del texto a negro o el color que desees */
+  /* Puedes ajustar otros estilos, como la fuente, tamaño de fuente, etc., según tus preferencias */
 }
-
-
 /* CARACTERISTICAS DEL LOGO */
 
 .navbar-item img {
@@ -62,11 +69,7 @@ body {
 .navbar-item :hover img {
 transform: scale(1.1);
 }
-.navbar-item a {
-  text-decoration: none; /* Elimina el subrayado */
-  color: #ffffff; /* Cambia el color del texto a negro o el color que desees */
-  /* Puedes ajustar otros estilos, como la fuente, tamaño de fuente, etc., según tus preferencias */
-}
+
 /* CARACTERISTICAS DE IMAGEN LOGOTIPO */
 
 #MydMylodon {
@@ -77,6 +80,259 @@ transform: scale(1.1);
   width: 30%; /* Ajusta el ancho de la imagen según tus preferencias */
   margin: 0 auto; /* Centra la imagen horizontalmente */
 }
+
+
+
+
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  height: 120vh; /* Ajusta la altura de la ventana */
+}
+
+
+.fondo-blanco {
+  flex: 1;
+  background-color: white; /* Color de fondo blanco */
+  margin-top: -50;
+  height: 700px;
+}
+
+h1 {
+  text-align: center;
+  font-family: themillion;
+  font-size: 50px;
+  font-weight: 600;
+  color: #181358;
+  margin: 30px 0 0 50px;
+}
+
+p {
+  color: #787878;
+  font-size: 20px; /* Cambia el tamaño del texto */
+  font-family: 'Quicksand', sans-serif;
+  margin: 30px 300px 0 300px;
+  margin-bottom: 10px; /* Agrega margen en la parte inferior */
+
+}
+
+
+
+
+
+
+
+/* ENVIAR MENSAJE */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: auto;
+  max-width: 350px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.message {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(0, 6, 87, 0.397);
+  border-radius: 5px;
+}
+
+.form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  font-family: 'Quicksand', sans-serif;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.form label .input:focus + span,.form label .input:valid + span {
+  top: 30px;
+  font-size: 0.7em;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+}
+
+.form label .input:valid + span {
+  color: green;
+}
+
+.input01 {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(0, 6, 87, 0.397);
+  border-radius: 5px;
+}
+
+.form label .input01 + span {
+  position: absolute;
+  left: 10px;
+  top: 50px;
+  color: grey;
+  font-size: 0.9em;
+  font-family: 'Quicksand', sans-serif;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input01:placeholder-shown + span {
+  top: 40px;
+  font-size: 0.9em;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.form label .input01:focus + span,.form label .input01:valid + span {
+  top: 50px;
+  font-size: 0.7em;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+}
+
+.form label .input01:valid + span {
+  color: green;
+}
+
+.fancy {
+  background-color: transparent;
+  border: 2px solid #00027a;
+  border-radius: 0px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 390;
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 2px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 8px 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  font-size: 13px;
+}
+
+.fancy::before {
+  content: " ";
+  width: 1.7rem;
+  height: 2px;
+  background: #00027a;
+  top: 50%;
+  left: 1.5em;
+  position: absolute;
+  transform: translateY(-50%);
+  transform: translateX(230%);
+  transform-origin: center;
+  transition: background 0.3s linear, width 0.3s linear;
+}
+
+.fancy .text {
+  font-size: 1.125em;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.33333em;
+  padding-left: 2em;
+  display: block;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  text-transform: lowercase;
+  text-decoration: none;
+  color: #00027a;
+  transform: translateX(30%);
+}
+
+.fancy .top-key {
+  height: 2px;
+  width: 1.5625rem;
+  top: -2px;
+  left: 0.625rem;
+  position: absolute;
+  background: white;
+  transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.fancy .bottom-key-1 {
+  height: 2px;
+  width: 1.5625rem;
+  right: 1.875rem;
+  bottom: -2px;
+  position: absolute;
+  background: white;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy .bottom-key-2 {
+  height: 2px;
+  width: 0.625rem;
+  right: 0.625rem;
+  bottom: -2px;
+  position: absolute;
+  background: white;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy:hover {
+  color: white;
+  background: #181358;
+}
+
+.fancy:hover::before {
+  width: 1.5rem;
+  background: white;
+}
+
+.fancy:hover .text {
+  color: white;
+  padding-left: 1.5em;
+}
+
+.fancy:hover .top-key {
+  left: -2px;
+  width: 0px;
+}
+
+.fancy:hover .bottom-key-1,
+ .fancy:hover .bottom-key-2 {
+  right: 0;
+  width: 0;
+}
+
 
 
 
