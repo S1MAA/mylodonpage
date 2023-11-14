@@ -88,15 +88,13 @@ transform: scale(1.1);
 .contenedor {
   display: flex;
   align-items: center;
-  height: 120vh; /* Ajusta la altura de la ventana */
 }
 
 
 .fondo-blanco {
   flex: 1;
   background-color: white; /* Color de fondo blanco */
-  margin-top: -50;
-  height: 700px;
+  height: 800px;
 }
 
 h1 {
@@ -114,7 +112,7 @@ p {
   font-family: 'Quicksand', sans-serif;
   margin: 30px 300px 0 300px;
   margin-bottom: 10px; /* Agrega margen en la parte inferior */
-
+  text-align: center;
 }
 
 
@@ -196,6 +194,7 @@ p {
   border: 1px solid rgba(0, 6, 87, 0.397);
   border-radius: 5px;
 }
+
 
 .form label .input01 + span {
   position: absolute;
