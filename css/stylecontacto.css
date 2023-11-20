@@ -124,6 +124,7 @@ p {
 /* ENVIAR MENSAJE */
 
 .form {
+  font-family: 'Quicksand', sans-serif;
   display: flex;
   flex-direction: column;
   gap: 10px;
