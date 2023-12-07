@@ -277,6 +277,11 @@ margin-left: 20%;
 
 .by-name {
   font-weight: 700;
+  color: #fafafa;
+}
+
+.by-name:hover{
+color: #0bf7ff;
 }
 
 

@@ -44,17 +44,16 @@ body {
 .navbar-item a{
   transition: font-size 0.3s ease;
 }
+
 .navbar-item a:hover{
   color: #0bf7ff;
   font-size: 27px;
 }
-
 .navbar-item a {
   text-decoration: none; /* Elimina el subrayado */
   color: #ffffff; /* Cambia el color del texto a negro o el color que desees */
   /* Puedes ajustar otros estilos, como la fuente, tamaño de fuente, etc., según tus preferencias */
 }
-
 
 
 /* CARACTERISTICAS DEL LOGO */
@@ -78,7 +77,6 @@ transform: scale(1.1);
 
 /* CARACTERISTICAS DE IMAGEN LOGOTIPO */
 
-
 #MydMylodon {
   text-align: center; /* Alinea la imagen en el centro */
 }
@@ -89,237 +87,111 @@ transform: scale(1.1);
 }
 
 
-
-
-
-/* CONTENEDOR */
-
-.contenedor-principal {
-  display: grid;
-  grid-template-columns: 1fr 3fr; /* Ajusta la proporción según tus necesidades */
-  height: 200vh; /* O el alto que prefieras */
-}
-
-.lado-izquierdo {
-  background-color: white;
-  /* Otros estilos para el lado izquierdo */
-}
-
-.lado-derecho {
-  /* Estilos para el lado derecho */
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* Espacio entre tarjetas */
-  padding: 20px; /* Espacio alrededor de las tarjetas */
-  align-items: flex-start;
-}
-
-
-
-
-
-/* BOTÓN */
-
-button {
-  outline: none;
-  cursor: pointer;
-  border: none;
-  padding: 0.9rem 2rem;
-  margin: 0;
-  font-size: 10;
-  position: relative;
-  display: inline-block;
-  letter-spacing: 0.05rem;
-  font-weight: 700;
-  font-size: 17px;
-  border-radius: 500px;
-  overflow: hidden;
-  background: #0bf7ff;
-  color: rgb(20, 21, 71,0.8);
- }
- 
- button span {
-  position: relative;
-  z-index: 10;
-  transition: color 0.4s;
- }
- 
- button:hover span {
-  color: rgb(20, 21, 71,0.8);
- }
- 
- button::before,
- button::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
- }
- 
- button::before {
-  content: "";
-  background: #ffffff;
-  width: 120%;
-  left: -10%;
-  transform: skew(30deg);
-  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
- }
- 
- button:hover::before {
-  transform: translate3d(100%, 0, 0);
- }
- 
-
-
-
-
-/* CARDS DE COMPRA */
-
+/* CARTA INFORMACION */
 .card {
-  padding: 20px;
-  width: 330px;
-  min-height: 370px;
-  border-radius: 20px;
-  background: #12184b;
-  box-shadow: 5px 5px 8px #1b1b1b,
-             -5px -5px 8px #272727;
-  transition: 0.4s;
-}
-
-.card:nth-child(odd) {
-  margin-right: 60px; /* Espacio a la derecha de cada tarjeta impar */
-  margin-left: 60px;
-}
-
-
-.card:hover {
-  translate: 0 -10px;
+position: absolute;
+top: 400px;
+left: 50%;
+display: inline-block;
+  margin-right: 40px;
+  width: 900px;
+ 
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow: 15px 15px 30px #bebebe,
+             -15px -15px 30px #ffffff;           
 }
 
 .card-title {
-  font-size: 18px;
+  font-family: themillion;
+  font-size: 50px;
   font-weight: 600;
-  color: #ffffff;
+  color: #7ef0ff;
   margin: 15px 0 0 10px;
 }
 
-.card-image {
-  min-height: 170px;
-  background-color: #ffffff;
-  border-radius: 15px;
-  background: #ffffff;
-  box-shadow: inset 5px 5px 3px #ffffff,
-            inset -5px -5px 3px #ffffff;
-}
-
 .card-body {
-  font-family: 'Quicksand', sans-serif;
+  text-indent: 20px;
+  font-family: themillion;
   margin: 13px 0 0 10px;
-  color: rgb(184, 184, 184);
+  color: rgb(53, 53, 53);
   font-size: 15px;
 }
 
 .footer {
-  float: right;
+  font-family: themillion;
+  text-indent: 20px;
+  float: left;
   margin: 28px 0 0 18px;
   font-size: 13px;
-  color: #b3b3b3;
+  color: #000000;
 }
-
 .by-name {
   font-weight: 700;
 }
 
-
-/* CORAZON */
-.heart-container {
-  --heart-color: rgb(91, 173, 255);
-  position: relative;
-  width: 30px;
-  height: 30px;
-  transition: .3s;
-  padding-top: 20px;
-}
-
-.heart-container .checkbox {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  z-index: 20;
-  cursor: pointer;
-}
-
-.heart-container .svg-container {
-  width: 100%;
-  height: 100%;
+.sobrenosotros {
   display: flex;
-  justify-content: center;
+  align-items: center; /* Alinea verticalmente */
+}
+
+
+
+
+
+/*  PRUEBAAA FONDOBLANCO E IMAGEN   */
+
+
+.contenedor {
+  display: flex;
   align-items: center;
+  height: 140vh; /* Ajusta la altura de la ventana */
+  width: 179vh;
 }
 
-.heart-container .svg-outline,
-        .heart-container .svg-filled {
-  fill: var(--heart-color);
-  position: absolute;
+.imagen {
+  flex: 1;
+  background-image: url('../img/noticiastrofeo.png'); /* URL de tu imagen */
+  background-size: cover;
+  background-position: center;
+  height: 100%;
 }
 
-.heart-container .svg-filled {
-  animation: keyframes-svg-filled 1s;
-  display: none;
+.fondo-blanco {
+  flex: 1;
+  background-color: white; /* Color de fondo blanco */
+  padding: 20px;
+  height: 100%;
 }
 
-.heart-container .svg-celebrate {
-  position: absolute;
-  animation: keyframes-svg-celebrate .5s;
-  animation-fill-mode: forwards;
-  display: none;
-  stroke: var(--heart-color);
-  fill: var(--heart-color);
-  stroke-width: 2px;
+h1 {
+  font-family: themillion;
+  font-size: 40px;
+  font-weight: 600;
+  color: #7ef0ff;
+  margin: 30px 0 0 50px;
 }
 
-.heart-container .checkbox:checked~.svg-container .svg-filled {
-  display: block
+p {
+  font-size: 20px; /* Cambia el tamaño del texto */
+  font-family: 'Quicksand', sans-serif;
+  margin: 30px 70px 0 50px;
+  margin-bottom: 10px; /* Agrega margen en la parte inferior */
 }
 
-.heart-container .checkbox:checked~.svg-container .svg-celebrate {
-  display: block
+
+
+p1 {
+    color: #000000;
+    font-size: 20px; /* Cambia el tamaño del texto */
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
 }
 
-@keyframes keyframes-svg-filled {
-  0% {
-    transform: scale(0);
-  }
 
-  25% {
-    transform: scale(1.2);
-  }
 
-  50% {
-    transform: scale(1);
-    filter: brightness(1.5);
-  }
-}
 
-@keyframes keyframes-svg-celebrate {
-  0% {
-    transform: scale(0);
-  }
 
-  50% {
-    opacity: 1;
-    filter: brightness(1.5);
-  }
-
-  100% {
-    transform: scale(1.4);
-    opacity: 0;
-    display: none;
-  }
-}
 
 
 
