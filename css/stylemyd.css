@@ -141,6 +141,7 @@ p {
 /*  CORREO ELECTRONICOOOOOOO   */
 
 .input-container {
+  font-family: 'Quicksand', sans-serif;
   position: relative;
   margin: 50px auto;
   width: 200px;

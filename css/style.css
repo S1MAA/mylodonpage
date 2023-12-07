@@ -1,5 +1,6 @@
 /*  */
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 body {
     min-height: 100%;
@@ -234,8 +235,8 @@ margin-left: 20%;
   min-height: 370px;
   border-radius: 20px;
   background: #12184b;
-  box-shadow: 5px 5px 8px #12184b,
-             -5px -5px 8px #0a0e3e;
+  box-shadow: 5px 5px 8px #1b1b1b,
+             -5px -5px 8px #272727;
   transition: 0.4s;
 }
 
@@ -244,10 +245,9 @@ margin-left: 20%;
 }
 
 .card-title {
-  font-family: themillion;
   font-size: 18px;
   font-weight: 600;
-  color: #b2eccf;
+  color: #0bf7ff;
   margin: 15px 0 0 10px;
 }
 
@@ -262,10 +262,10 @@ margin-left: 20%;
 }
 
 .card-body {
-  font-family: themillion;
+  font-family: 'Quicksand', sans-serif;
   margin: 13px 0 0 10px;
   color: rgb(184, 184, 184);
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .footer {
