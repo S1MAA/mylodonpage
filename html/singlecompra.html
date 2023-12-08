@@ -3,7 +3,7 @@
 <head>
     <title>MylodonEsports</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/stylestore.css">
+    <link rel="stylesheet" href="../css/singlecompra.css">
     <script src="../js/bootstrap.bundle.min.js"></script>
     <link rel="icon" href="../img/logo.png" />
 </head>
@@ -30,116 +30,65 @@
 
 
 
- <!--  CARDS STORE  -->
-
- <div class="contenedor-principal">
-    <div class="lado-izquierdo">
-        <!-- Contenido del lado izquierdo -->
-   
-
-
-        <div style="height: 50px;"></div>
-        <p style="margin-left: 50px; font-size: 40;  font-family: 'Quicksand', sans-serif;">Productos</p>
-        <div style="height: 30px;"></div>
-        <label for="customRange1" class="form-label" style="margin-left: 100px; font-size: 20; font-family: 'Quicksand', sans-serif;">Precio</label>
-        <input type="range" class="form-range" id="customRange1" style="width: 300px; margin-left: 100px;">
-        <div style="height: 30px;"></div>
-        <label for="customRange1" class="form-label" style="margin-left: 100px; font-size: 20; font-family: 'Quicksand', sans-serif;">Talla</label>
-        <div class="row">
-            <div class="content" style="margin-left: 240px;">
-                <label class="checkBox">
-                    <input type="checkbox" id="ch1">
-                    <div class="transition"></div>
-                </label>
-                <span>  XS</span> <!-- La letra 'S' se coloca junto al checkbox -->
+ <!--  CARRUSEL  -->
+ 
+ 
+ <div class="contenedor-carrusel" style="background-color: white;">
+    <div style="width: 250px;"></div>
+    <div id="carouselExample" class="carousel slide" style="width: 800px; float: left; margin-left: 100px;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../img/comprapolera1.png" class="d-block w-100" alt="...">
             </div>
-            <div style="height: 10px;"></div>
-            <div class="content" style="margin-left: 240px;">
-                <label class="checkBox">
-                    <input type="checkbox" id="ch1">
-                    <div class="transition"></div>
-                </label>
-                <span>  S</span> <!-- La letra 'S' se coloca junto al checkbox -->
-            </div>
-            <div style="height: 10px;"></div>
-            <div class="content" style="margin-left: 240px;">
-                <label class="checkBox">
-                    <input type="checkbox" id="ch1">
-                    <div class="transition"></div>
-                </label>
-                <span>  M</span> <!-- La letra 'S' se coloca junto al checkbox -->
-            </div>
-            <div style="height: 10px;"></div>
-            <div class="content" style="margin-left: 240px;">
-                <label class="checkBox">
-                    <input type="checkbox" id="ch1">
-                    <div class="transition"></div>
-                </label>
-                <span>  L</span> <!-- La letra 'S' se coloca junto al checkbox -->
-            </div>
-            <div style="height: 10px;"></div>
-            <div class="content" style="margin-left: 240px;">
-                <label class="checkBox">
-                    <input type="checkbox" id="ch1">
-                    <div class="transition"></div>
-                </label>
-                <span>  XL</span> <!-- La letra 'S' se coloca junto al checkbox -->
+            <div class="carousel-item">
+                <img src="../img/comprapolera2.png" class="d-block w-100" alt="...">
             </div>
         </div>
-        
-
-
+        <buttton class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </buttton>
+        <buttton class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </buttton>
     </div>
-    <div class="lado-derecho">
-        <!-- Tu código de tarjetas aquí -->
-        <div class="card">
-            <div class="card-image">
-                <img src="../img/mydpolera.png" alt="polera mylodon" width="100%">
-            </div>
-
-            <div title="Like" class="heart-container">
-                <input id="Give-It-An-Id" class="checkbox" type="checkbox">
-                <div class="svg-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="svg-outline" viewBox="0 0 24 24">
-                        <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z">
-                        </path>
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="svg-filled" viewBox="0 0 24 24">
-                        <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z">
-                        </path>
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" class="svg-celebrate">
-                        <polygon points="10,10 20,20"></polygon>
-                        <polygon points="10,50 20,50"></polygon>
-                        <polygon points="20,80 30,70"></polygon>
-                        <polygon points="90,10 80,20"></polygon>
-                        <polygon points="90,50 80,50"></polygon>
-                        <polygon points="80,80 70,70"></polygon>
-                    </svg>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="card-title">Clásica</p>
-                </div>
-                <div class="col-md-6 text-end">
-                    <p class="card-title">$14.990</p>
-                </div>
-            </div>
-
-            <p class="card-body">
-                Polera clásica de Mylodon, sin nombres de integrantes.
-            </p>
-            <button id="comprarButton"> <span>COMPRAR</span></button>
+    <div title="Like" class="heart-container" id="like_1">
+        <input id="Give-It-An-Id" class="checkbox" type="checkbox">
+        <div class="svg-container">
+            <svg xmlns="http://www.w3.org/2000/svg" class="svg-outline" viewBox="0 0 24 24">
+                <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z">
+                </path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="svg-filled" viewBox="0 0 24 24">
+                <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z">
+                </path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" class="svg-celebrate">
+                <polygon points="10,10 20,20"></polygon>
+                <polygon points="10,50 20,50"></polygon>
+                <polygon points="20,80 30,70"></polygon>
+                <polygon points="90,10 80,20"></polygon>
+                <polygon points="90,50 80,50"></polygon>
+                <polygon points="80,80 70,70"></polygon>
+            </svg>
         </div>
-        <script>
-            // Agregar un evento de clic al botón
-            document.getElementById("comprarButton").addEventListener("click", function() {
-              // Redireccionar a index.html
-              window.location.href = "singlecompra.html";
-            });
-          </script>
+    </div>
+    <div class="texto" style="float: right; width: calc(100% - 1000px); padding: 20px;">
+        Esta polera de equipo de esports presenta un diseño elegante con fondo negro y rayas en color cyan en la parte frontal y trasera. En la parte trasera, se encuentra el nombre "Mylodon" y un emblema con la frase "Fuerza Austral". Una prenda distintiva que muestra la identidad y pasión del equipo. Perfecta para competiciones y eventos.
+    </div>
+    <div style="clear: both;"></div>
+</div>
+
+ 
+ 
+ 
+ 
+    <div class="contenedor-principal">
+
+
+ <!--  CARDS STORE  -->
+    <div class="lado-derecho" style="margin-top: 50px;">
+        <!-- Tu código de tarjetas aquí -->
+        
         <!-- Repite el div de la tarjeta según sea necesario -->
         <div class="card">
             <div class="card-image">
@@ -227,7 +176,7 @@
         </div>
 
         <!-- Repite el div de la tarjeta según sea necesario -->
-        <div class="card" style="margin-top: -300px; margin-left: 60px;">
+        <div class="card">
                     <div class="card-image">
                         <img src="../img/polera javitox.png" alt="polera mylodon" width="100%">
                     </div>
@@ -270,53 +219,11 @@
         </div>
 
 
-        
-                <!-- Repite el div de la tarjeta según sea necesario -->
-                <div class="card" style="margin-top: -300px;">
-                    <div class="card-image">
-                        <img src="../img/poleradaplague.png" alt="polera mylodon" width="100%">
-                    </div>
-        
-                    <div title="Like" class="heart-container">
-                        <input id="Give-It-An-Id" class="checkbox" type="checkbox">
-                        <div class="svg-container">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="svg-outline" viewBox="0 0 24 24">
-                                <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z">
-                                </path>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="svg-filled" viewBox="0 0 24 24">
-                                <path d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z">
-                                </path>
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" class="svg-celebrate">
-                                <polygon points="10,10 20,20"></polygon>
-                                <polygon points="10,50 20,50"></polygon>
-                                <polygon points="20,80 30,70"></polygon>
-                                <polygon points="90,10 80,20"></polygon>
-                                <polygon points="90,50 80,50"></polygon>
-                                <polygon points="80,80 70,70"></polygon>
-                            </svg>
-                        </div>
-                    </div>
-        
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p class="card-title">Clásica</p>
-                        </div>
-                        <div class="col-md-6 text-end">
-                            <p class="card-title">$14.990</p>
-                        </div>
-                    </div>
-        
-                    <p class="card-body">
-                        Polera clásica de Mylodon, sin nombres de integrantes.
-                    </p>
-                    <button> <span>COMPRAR</span></button>
-                </div>
 
 
-                <!-- Repite el div de la tarjeta según sea necesario -->
-                <div class="card" style="margin-top: -300px;">
+
+        <!-- Repite el div de la tarjeta según sea necesario -->
+        <div class="card">
                     <div class="card-image">
                         <img src="../img/poleralimits.png" alt="polera mylodon" width="100%">
                     </div>
@@ -356,7 +263,7 @@
                         Polera clásica de Mylodon, sin nombres de integrantes.
                     </p>
                     <button> <span>COMPRAR</span></button>
-                </div>
+        </div>
         
 
     </div>

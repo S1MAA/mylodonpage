@@ -88,25 +88,36 @@ transform: scale(1.1);
 
 
 
-.col-lg-6 {
+#texto_tarjeta {
   flex: 0 0 50%;
   max-width: 50%;
   position: relative;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  font-family: themillion;
+  color: #ffffff;
 }
 
 h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 1.125rem;
-  font-family: roc-grotesk-wide,sans-serif;
+  font-family: themillion;
   font-weight: 700;
   line-height: .875;
   text-transform: uppercase;
-  color: #222430;
+  color: #ffffff;
+}
+
+.imgseba {
+  width: 400px;
+
 }
 
 
+.imgivan{
+  width: 400px;
+
+}
 
 
 

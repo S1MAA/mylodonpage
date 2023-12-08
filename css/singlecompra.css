@@ -90,80 +90,18 @@ transform: scale(1.1);
 
 
 
-/* CHECK BOX */
-
-
-
-.content span {
-  display: inline-block; /* Hace que el span se comporte como un elemento en línea */
-  vertical-align: middle; /* Alinea verticalmente con el checkbox */
-  font-family: 'Quicksand', sans-serif;
-  font-size: 20px;
-  color: #000000;
-  margin-top: -10;
-}
-
-
-.clear {
-  clear: both;
-}
-
-.checkBox {
-  display: inline-block;
-  cursor: pointer;
-  width: 20px;
-  height: 20px;
-  border: 3px solid rgba(255, 255, 255, 0);
-  border-radius: 10px;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0px 0px 0px 2px rgb(0, 0, 0);
-}
-
-.checkBox div {
-  width: 60px;
-  height: 60px;
-  background-color: black;
-  top: -52px;
-  left: -52px;
-  position: absolute;
-  transform: rotateZ(45deg);
-  z-index: 100;
-}
-
-.checkBox input[type=checkbox]:checked + div {
-  left: -10px;
-  top: -10px;
-}
-
-.checkBox input[type=checkbox] {
-  position: absolute;
-  left: 50px;
-  visibility: hidden;
-}
-
-.transition {
-  transition: 300ms ease;
-}
-
-
-
-
-
 
 
 /* CONTENEDOR */
 
 .contenedor-principal {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   grid-template-columns: 1fr 3fr; /* Ajusta la proporción según tus necesidades */
   height: 200vh; /* O el alto que prefieras */
+  background-color: #fff;
 }
 
-.lado-izquierdo {
-  background-color: white;
-  /* Otros estilos para el lado izquierdo */
-}
 
 .lado-derecho {
   /* Estilos para el lado derecho */
@@ -175,6 +113,11 @@ transform: scale(1.1);
 }
 
 
+.texto{
+  margin-top: 300px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+}
 
 
 
@@ -301,6 +244,15 @@ button {
   height: 30px;
   transition: .3s;
   padding-top: 20px;
+}
+#like_1 {
+  --heart-color: rgb(91, 173, 255);
+  position: absolute;
+  top: 580px;
+  left: 1015px;
+  width: 30px;
+  height: 30px;
+  transition: .3s;
 }
 
 .heart-container .checkbox {
@@ -466,6 +418,10 @@ footer {
   }
 }
 
-
+.carousel-control-prev .carousel-control-prev-icon,
+.carousel-control-next .carousel-control-next-icon {
+    background-color: black;
+    color: black;
+}
 /* Fin de los estilos para el footer */
 
