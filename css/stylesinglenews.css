@@ -146,12 +146,12 @@ display: inline-block;
   display: flex;
   align-items: center;
   height: 140vh; /* Ajusta la altura de la ventana */
-  width: 179vh;
+  width: 100%;
 }
 
 .imagen {
   flex: 1;
-  background-image: url('../img/noticiastrofeo.png'); /* URL de tu imagen */
+  background-image: url('../img/noticias.png'); /* URL de tu imagen */
   background-size: cover;
   background-position: center;
   height: 100%;
